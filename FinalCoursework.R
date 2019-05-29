@@ -6,9 +6,9 @@ library(lmtest)
 library(sandwich)
 library(texreg)
 
-# Part 1
+# Part 1: Does rain affect turnout?
 
-# Part 2
+# Part 2: Inequality and child mortality
 ## Question 1
 a <- read.csv("https://uclspp.github.io/datasets/data/vdem.csv")
 summary(a)
@@ -280,7 +280,7 @@ screenreg(m3.robust2,
           custom.model.names = c("Twoway Fixed Effects (HAC)")
 )
 
-# Part 3
+# Part 3: Leave or Remain?
 b <- read.csv("https://uclspp.github.io/datasets/data/ess.csv")
 summary(b)
 names(b)
